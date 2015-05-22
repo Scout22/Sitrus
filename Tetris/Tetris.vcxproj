@@ -107,13 +107,30 @@
     <ClInclude Include="visual.h" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\Debug\tetra.bmp" />
-    <Image Include="..\Debug\tetra_b.bmp" />
-    <Image Include="..\Debug\tetra_j.bmp" />
-    <Image Include="..\Debug\tetra_o.bmp" />
-    <Image Include="..\Debug\tetra_v.bmp" />
-    <Image Include="..\Debug\tetra_vi.bmp" />
-    <Image Include="..\Debug\Tetris.bmp" />
+    <Image Include="0.bmp" />
+    <Image Include="1.bmp" />
+    <Image Include="2.bmp" />
+    <Image Include="3.bmp" />
+    <Image Include="4.bmp" />
+    <Image Include="highscore.bmp" />
+    <Image Include="icon.bmp" />
+    <Image Include="icon2.bmp" />
+    <Image Include="icon3.bmp" />
+    <Image Include="tetra_b.bmp" />
+    <Image Include="tetra_c.bmp" />
+    <Image Include="tetra_j.bmp" />
+    <Image Include="tetra_o.bmp" />
+    <Image Include="tetra_r.bmp" />
+    <Image Include="tetra_v.bmp" />
+    <Image Include="tetra_vi.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="0.mp3" />
+    <Media Include="1.mp3" />
+    <Media Include="2.mp3" />
+    <Media Include="3.mp3" />
+    <Media Include="4.mp3" />
+    <Media Include="b.mp3" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
