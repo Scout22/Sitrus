@@ -1,4 +1,12 @@
-#include "def.h"
+ï»¿#include "def.h"
+
+/**
+* \file SFX.c
+* \brief Fichier regroupant les fonctions de lecture audio.
+*
+*  Fichier regroupant les fonctions de lecture audio.
+*
+*/
 
 void music(FMOD_SYSTEM **system, FMOD_SOUND **musique,param *settings)
 {
@@ -16,14 +24,14 @@ void music(FMOD_SYSTEM **system, FMOD_SOUND **musique,param *settings)
 	/* On ouvre la musique */
 	resultat = FMOD_System_CreateSound(*system, file, FMOD_LOOP_NORMAL | FMOD_2D | FMOD_CREATESTREAM, 0, musique);
 
-	/* On vérifie si elle a bien été ouverte (IMPORTANT) */
+	/* On vÃ©rifie si elle a bien Ã©tÃ© ouverte (IMPORTANT) */
 	if (resultat != FMOD_OK)
 	{
 		fprintf(stderr, "Impossible de lire le fichier mp3\n");
 		exit(EXIT_FAILURE);
 	}
 
-	/* On active la répétition de la musique à l'infini */
+	/* On active la rÃ©pÃ©tition de la musique Ã  l'infini */
 	FMOD_Sound_SetLoopCount(*musique, -1);
 
 	/* On joue la musique */

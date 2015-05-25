@@ -1,4 +1,11 @@
-#include "visual.h"
+﻿#include "visual.h"
+/**
+* \file visual.c
+* \brief  Fichier regroupant les fonctions graphiques
+*
+*   Fichier regroupant les fonctions graphiques
+*
+*/
 
 void pause()
 {
@@ -44,7 +51,7 @@ SDL_Surface* write_text(char * text,int color_R,int color_G, int color_B,int siz
 		texte = SDL_CreateRGBSurface(SDL_HWSURFACE, 10, 10, 32, 0, 0, 0, 0);
 		return texte;
 	}
-	/* �criture du texte dans la SDL_Surface texte en mode Blended (optimal) */
+	/* Écriture du texte dans la SDL_Surface texte en mode Blended (optimal) */
 	texte = TTF_RenderText_Blended(police, text, couleur);
 
 

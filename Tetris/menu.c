@@ -1,7 +1,14 @@
-#include "game.h"
+ï»¿#include "game.h"
 #include "SFX.h"
 #include "menu.h"
 #include "visual.h"
+/**
+* \file menu.c
+* \brief  Fichier regroupant les differents menu
+*
+*  Fichier regroupant les differents menu
+*
+*/
 
 
 void option_menu_general(SDL_Surface *ecran,  param* settings){
@@ -958,7 +965,7 @@ int game(param *settings, SDL_Surface *ecran)
 		if (ftime > (current_play.game_speed / 10.0)){
 			old_time = current_time;
 
-			//Genere la texture lié au score
+			//Genere la texture liÃ© au score
 			sprintf(texto, "%d", current_play.score);
 			if (settings->theme > 0){
 				text = write_text(texto, 0, 255, 255, 65);
@@ -967,7 +974,7 @@ int game(param *settings, SDL_Surface *ecran)
 			{
 				text = write_text(texto, 0, 255, 0, 65);
 			}
-			//Applique la gravité au tetrino 
+			//Applique la gravitÃ© au tetrino 
 			switch (legalPosition(&current_play, current_play.current->x_pos, current_play.current->y_pos + 1, 0)){
 			case 1: //Pas de contact poursuit la chute
 				current_play.current->y_pos += 1;
@@ -1043,9 +1050,9 @@ int game(param *settings, SDL_Surface *ecran)
 		//Gestion des evenements
 		if (SDL_PollEvent(&event))
 		{
-			if (event.type == SDL_QUIT) /* On teste le type d'événement */
+			if (event.type == SDL_QUIT) /* On teste le type d'Ã©vÃ©nement */
 			{
-				/* Si c'est un événement QUITTER */
+				/* Si c'est un Ã©vÃ©nement QUITTER */
 				stop = 1;
 			}
 
@@ -1120,7 +1127,7 @@ int game(param *settings, SDL_Surface *ecran)
 		SDL_Delay(25);
 	}
 
-	//Si la boucle est quitté suite a un GameOver saisir nom joueur
+	//Si la boucle est quittÃ© suite a un GameOver saisir nom joueur
 	if (stop == 2){
 		nameinput_menu(ecran, player_name);
 		print_highscore(player_name, current_play.score);
