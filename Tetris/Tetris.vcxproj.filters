@@ -118,4 +118,9 @@
       <Filter>Fichiers de ressources</Filter>
     </Media>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentation\Reference.pdf">
+      <Filter>Fichiers de ressources</Filter>
+    </None>
+  </ItemGroup>
 </Project>

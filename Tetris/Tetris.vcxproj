@@ -132,6 +132,9 @@
     <Media Include="4.mp3" />
     <Media Include="b.mp3" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Documentation\Reference.pdf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
